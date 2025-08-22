@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Clock, Zap, Shield, BarChart3, Bell, CreditCard } from "lucide-react";
+import { Clock, Zap, Shield, BarChart3, Receipt, RefreshCw } from "lucide-react";
 
 const features = [
   {
@@ -23,14 +23,14 @@ const features = [
     description: "Bank-grade security with full compliance to data protection regulations and industry standards."
   },
   {
-    icon: Bell,
-    title: "Smart Notifications",
-    description: "Get notified instantly when payments are received or when intervention is needed."
+    icon: Receipt,
+    title: "One Tap GST",
+    description: "Generate and manage GST invoices instantly with a single tap. Automated tax calculations and compliance."
   },
   {
-    icon: CreditCard,
-    title: "Multiple Payment Options",
-    description: "Accept payments through various channels - cards, bank transfers, digital wallets, and more."
+    icon: RefreshCw,
+    title: "Auto Status Update",
+    description: "Real-time invoice status updates automatically sync across all platforms and notify relevant stakeholders."
   }
 ];
 
@@ -49,7 +49,7 @@ const Features = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {features.map((feature, index) => (
             <Card key={index} className="border-border hover:shadow-elegant transition-all duration-300 hover:scale-105 bg-card">
               <CardHeader>

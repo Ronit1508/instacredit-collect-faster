@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import instacreditLogo from "@/assets/instacredit-logo.png";
 
 const Header = () => {
   return (
@@ -6,7 +7,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg"></div>
+            <img src={instacreditLogo} alt="InstaCredit" className="w-8 h-8 rounded-lg" />
             <span className="text-xl font-bold text-foreground">InstaCredit</span>
           </div>
           
